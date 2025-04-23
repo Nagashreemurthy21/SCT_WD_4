@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🔥 To-Do Web App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔥 To-Do Web App</h1>
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="What needs to be done?" required />
+      <input type="datetime-local" id="task-time" />
+      <select id="task-priority">
+        <option value="Low">Priority: Low</option>
+        <option value="Medium">Priority: Medium</option>
+        <option value="High">Priority: High</option>
+      </select>
+      <button type="submit">➕ Add Task</button>
+    </form>
+    <ul id="task-list"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
