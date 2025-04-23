@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background: #2c2f48;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  width: 100%;
+  max-width: 520px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #fbd46d;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+#task-form {
+  display: grid;
+  gap: 12px;
+}
+
+input, select, button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+input:focus, select:focus {
+  outline: 2px solid #fbd46d;
+  background: #fafafa;
+  color: #000;
+}
+
+#task-input, #task-time, select {
+  background: #f2f2f2;
+  color: #000;
+}
+
+button[type="submit"] {
+  background: #fbd46d;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #ffe277;
+}
+
+ul {
+  margin-top: 25px;
+  padding: 0;
+  list-style: none;
+}
+
+.task {
+  background: #3a3d5a;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.task:hover {
+  background: #484b6b;
+  transform: scale(1.01);
+}
+
+.task.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-info {
+  flex: 1;
+}
+
+.task-priority {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.task-buttons button {
+  background: #555;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.task-buttons button:hover {
+  background: #777;
+}
+
+small {
+  display: block;
+  color: #aaa;
+  font-size: 13px;
+  margin-top: 2px;
+}
